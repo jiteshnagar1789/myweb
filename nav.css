@@ -1,0 +1,142 @@
+*{
+    margin:0rem;
+    padding: 0rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+header{
+    background-color: #142433;
+    height:6rem;
+    width: 100%;
+}
+#navbar{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 6rem;
+}
+#logo{
+    height:4rem;
+    padding: 1rem 0rem 1rem 0rem;
+    display: inline-block;
+}
+#nav{
+    float: right;
+    display: flex;
+    list-style: none;
+    height: 6rem;
+    
+}
+li{
+    align-content: center;
+    padding:2rem 1.5rem 2rem 1.5rem;
+}
+
+button{
+    width: 10rem;
+    background: none;
+    color: white;
+    outline: none;
+    border:none;
+    font-size: 1.6rem;
+
+}
+button:hover{
+    color:skyblue;
+    font-size: 1.8rem;
+}
+
+/*main*/
+.col-2{
+    height: 110rem;
+    padding: 5rem 5rem 0rem 5rem;
+    background-color: azure;
+}
+.page{
+    height:50rem;
+    margin:0rem 20rem 0rem 20rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    display : flex ;
+    background: linear-gradient(to bottom,rgb(228, 93, 93),rgb(126, 126, 197)) ;
+    
+}
+#carimage1 {
+    width: 30rem;
+    height:40rem;
+    margin-right: 3rem;
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+.col-2 img:hover{
+    animation:shake 4s linear 1;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(5deg) scale(1.1);
+    }
+    25%{
+        transform: rotate(-10deg) scale(1.1);
+    }
+    50%{
+        transform: rotate(10deg) ;
+    }
+    75%{
+        transform: rotate(-10deg) ;
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+#carimage2{
+    width: 40rem;
+    height: 40rem;
+}
+h1{
+    font-family: cursive;
+    text-decoration:underlinea;
+    padding: 2rem;
+    color:aliceblue ;
+}
+p{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(240, 240, 110);
+}
+#secondpage{
+    margin-top: 4rem;
+    background-image: linear-gradient(rgba(46, 49, 173, 0.2),rgba(39, 166, 204, 0.3)),url(https://hips.hearstapps.com/hmg-prod/images/cfm-4278-1656583233.jpg?crop=0.842xw:0.630xh;0.116xw,0.181xh&resize=1200:*);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-blend-mode: lighten;
+    opacity: 0.5;
+    height: 40rem;
+}
+
+/*footer*/
+#foote{
+    background-color: #061b30;
+    height: 20rem;
+    position: relative;
+}
+#foote p{
+    color : white;
+}
+i{
+    width:3rem;
+    height:3rem;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+    .page{
+        display: block;
+        flex-direction: column;
+        height: auto;
+        margin: 0px;
+        
+    }
+    
+}
